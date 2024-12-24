@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Photo</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html" class="home-button">
+        <img src="public/images/home (1).png" alt="Home" class="home-icon">
+    </a>
+        <h1 class="logo">SkinScope</h1>
+    </div>
+</header>
+
+    <main class="main">
+        <div class="upload-container">
+            <div class="upload-card">
+                <h2>Analyze Your Skin</h2>
+                <p>Upload your photo to receive AI-powered insights into your skin health.</p>
+                <form id="upload-form" enctype="multipart/form-data">
+                    <label for="photo-upload" class="upload-label">
+                        <i class="fi fi-rr-upload"></i> Choose a Photo
+                        <input type="file" id="photo-upload" name="photo" accept="image/*" required hidden>
+                    </label>
+                    <button type="submit" class="button primary">Analyze</button>
+                </form>
+                <div id="result" class="result"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <h1 class="footer-logo">SkinScope</h1>
+        <p>© 2025 SkinScope Inc, All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="public/js/upload.js"></script>
+</body>
+</html>
